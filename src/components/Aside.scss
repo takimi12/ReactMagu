@@ -1,0 +1,57 @@
+.aside-menu {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    height: 70px;
+    overflow: hidden;
+  }
+  .develop{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    height: 200px;
+    overflow: visible;
+  }
+  .normal{
+    transform: rotate(0deg);
+
+  }
+  .invert{
+    transform: rotate(180deg);
+
+  }
+  
+  .menu-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-items li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-items a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .menu-items a:hover {
+    color: #555;
+  }
+  
+  .menu-items a span {
+    margin-left: 10px;
+  }
+  
+  .topButton{
+    display: flex;
+    align-items: center;
+  }

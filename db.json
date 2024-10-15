@@ -1,0 +1,26 @@
+{
+    "collection1": [
+    {
+        "id":"1", 
+        "prop1": "value1 - collection 1", 
+        "price":100
+    },
+    {
+        "id":"2", 
+        "prop1": "value2 - collection 2", 
+        "price":100
+    }
+    ],
+    "collection2": [
+        {
+            "id":"!", 
+            "prop1": "value1", 
+            "price":98
+        },
+        {
+            "id":"!", 
+            "prop1": "value2", 
+            "price":99
+        }
+        ]
+}

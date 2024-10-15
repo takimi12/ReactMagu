@@ -1,0 +1,31 @@
+{
+  "clients": [
+    {
+      "id": "1",
+      "firstName": "Jan",
+      "lastName": "Kowalski",
+      "street": "Kwiatowa 12",
+      "postalCode": "12-345",
+      "city": "Warszawa",
+      "region": "Mazowieckie",
+      "photoUrl": "https://example.com/photo.jpg",
+      "phoneNumber": "+48123456789"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "clientId": 1,
+      "title": "Order 1",
+      "description": "Description of Order 1",
+      "quantity": 5
+    },
+    {
+      "id": "166e",
+      "client": "+48123456789",
+      "quantity": "12",
+      "title": "dasdaads",
+      "description": "asdasdasdadadad"
+    }
+  ]
+}

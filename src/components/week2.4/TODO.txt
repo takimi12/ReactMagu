@@ -1,0 +1,58 @@
+1.Prosta lista zadań (todo list):
+
+Akcje: dodawanie zadania, usuwanie zadania, oznaczanie jako wykonane
+Stan: tablica zadań
+
+
+2.Koszyk zakupowy:
+
+Akcje: dodawanie produktu, usuwanie produktu, zmiana ilości
+Stan: lista produktów z ilościami i ceną całkowitą
+
+
+3.Formularz z wieloma polami:
+
+Akcje: aktualizacja poszczególnych pól
+Stan: obiekt zawierający wartości wszystkich pól
+
+
+4.Prosty odtwarzacz muzyki:
+
+Akcje: play, pause, next, previous
+Stan: aktualny utwór, status odtwarzania
+
+
+5.System filtrowania i sortowania listy:
+
+Akcje: zmiana filtru, zmiana sortowania
+Stan: aktualne kryteria filtrowania i sortowania
+
+
+6.Prosty kalkulator:
+
+Akcje: wprowadzanie cyfr, wybór operacji, obliczanie wyniku
+Stan: bieżące wprowadzone cyfry, wybrana operacja
+
+
+7.System paginacji:
+
+Akcje: przejście do następnej/poprzedniej strony, skok do konkretnej strony
+Stan: aktualna strona, ilość elementów na stronę
+
+
+8.Prosty edytor tekstu:
+
+Akcje: dodawanie tekstu, usuwanie tekstu, formatowanie
+Stan: aktualny tekst, wybrane formatowanie
+
+
+9.System logowania:
+
+Akcje: próba logowania, wylogowanie, aktualizacja danych użytkownika
+Stan: status logowania, dane użytkownika
+
+
+10.Prosty quiz:
+
+Akcje: wybór odpowiedzi, przejście do następnego pytania
+Stan: aktualne pytanie, udzielone odpowiedzi, wynik

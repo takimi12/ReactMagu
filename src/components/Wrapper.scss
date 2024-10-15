@@ -1,0 +1,63 @@
+.wrapper-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+  
+    // Mobile layout
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+  
+    // Desktop layout
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  
+  // Optional: Add some basic styling to the Card component
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+  //////////
+  /// 
+//  .wrapper-flex {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 1rem;
+//   padding: 1rem;
+
+//   // Mobile layout
+//   @media (max-width: 767px) {
+//     flex-direction: column;
+//   }
+
+//   // Desktop layout
+//   @media (min-width: 768px) {
+//     justify-content: flex-start;
+//     max-width: 1200px;
+//     margin: 0 auto;
+//   }
+// }
+
+// .card {
+//   flex: 1 1 100%; // Full width on mobile
+//   border: 1px solid #ccc;
+//   border-radius: 8px;
+//   padding: 1rem;
+//   background-color: #fff;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+//   // Desktop layout
+//   @media (min-width: 768px) {
+//     flex: 0 1 calc(33.333% - 1rem); // Approximately 3 cards per row, accounting for gap
+//     max-width: calc(33.333% - 1rem);
+//   }
+// }
