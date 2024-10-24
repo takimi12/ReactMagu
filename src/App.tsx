@@ -12,11 +12,25 @@ import { OrdersAdd } from "./components/week3.2.2/OrdersAdd";
   
 
 import { ChildrenBusJSX } from "./components/week2.3/ChildrenBus";
+import { Formiks } from "./components/forms/formik/formik";
+import { FakeRegisterComponent } from "./components/week3.1.4/RegisterComponent";
+import { HookFormWatch } from "./components/forms/hookForm/ReactHookFormWatch";
+import { ReactHookForm } from "./components/forms/hookForm/ReactHookForm";
+import { List } from "./components/komunikacjaAPI/SimpleGet/List";
+import { TodoApp } from "./components/komunikacjaAPI/FullApi/TodoApp";
+import { Tanstack } from "./components/TanstackQuery/[1]Pobranie danych i subdanych/Todos";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { TanstackRefetch } from "./components/TanstackQuery/Refetch + automatyczne pobranie danych/Todos";
+import { MultipleTodos } from "./components/TanstackQuery/Wielokrotne zapytania/MultipleTodos";
+import { TanstackMutation } from "./components/TanstackQuery/Mutacje/Todos";
+import { Books } from "./components/TanstackQuery/Odcinek86/Books";
+import {Users} from "./components/context/theory/Users"
+import { CounterContextApp } from "./components/context/theory/Counter";
+import { AppContext } from "./components/context/Exercises/App";
+import { TodoAppKomunikacjaExercise2 } from "./components/komunikacjaAPI/exercise2/TodoApp";
+import { MyVersionFullApi } from "./components/komunikacjaAPI/myVersion/myVersionFullApi";
 
-
-
-
-
+const queryClient = new QueryClient();
 
 
 
@@ -24,8 +38,23 @@ function App() {
   return (
     <>
 
+    {/* <QueryClientProvider client={queryClient}>
+    <Tanstack />
+    </QueryClientProvider> */}
 
-<BrowserRouter>
+
+<MyVersionFullApi />
+
+    
+{/* 
+    <TodoApp /> */}
+
+{/* 
+<FakeRegisterComponent /> */}
+{/* <Formiks /> */}
+{/* <Components /> */}
+
+{/* <BrowserRouter>
 <Routes>
 <Route path="/" element={<Components />} />
 <Route path="/form" element={<Form />} />
@@ -43,7 +72,7 @@ function App() {
 
 </Routes>
 
-</BrowserRouter>
+</BrowserRouter> */}
 
 
 

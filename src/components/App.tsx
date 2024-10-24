@@ -76,10 +76,9 @@ const menuData = [
 export const Components = () => {
   return (
     <div className="App">
-        {/* <Router>
+      <Router> 
         <AsideMenu menuData={menuData}/>
-        </Router> */}
-        <AsideMenu menuData={menuData}/>
+       </Router> 
 
 
         <Wrapper />
