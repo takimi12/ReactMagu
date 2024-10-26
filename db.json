@@ -1,18 +1,42 @@
 {
-  "todos": [
+  "clients": [
     {
       "id": "1",
-      "title": "lorem ipsum1",
-      "quantity": 23
+      "firstName": "Jan",
+      "lastName": "Kowalski",
+      "street": "Kwiatowa 12",
+      "postalCode": "12-345",
+      "city": "Warszawa",
+      "region": "Mazowieckie",
+      "photoUrl": "https://example.com/photo.jpg",
+      "phoneNumber": "+48123456789"
     },
     {
       "id": "2",
-      "title": "lorem ipsum2",
-      "quantity": 3
+      "firstName": "Jan",
+      "lastName": "Kowalski",
+      "street": "Kwiatowa 12",
+      "postalCode": "12-345",
+      "city": "Warszawa",
+      "region": "Mazowieckie",
+      "photoUrl": "https://example.com/photo.jpg",
+      "phoneNumber": "+48123456789"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "clientId": 1,
+      "title": "Order 1",
+      "description": "Description of Order 1",
+      "quantity": 5
     },
     {
-      "id": "9084",
-      "title": "dasd"
+      "id": "166e",
+      "client": "+48123456789",
+      "quantity": "12",
+      "title": "dasdaads",
+      "description": "asdasdasdadadad"
     }
   ]
 }

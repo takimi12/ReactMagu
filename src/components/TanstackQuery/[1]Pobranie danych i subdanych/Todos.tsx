@@ -9,6 +9,8 @@ export const Tanstack = () => {
     const {data} = useGetTodosQuery();
 
 
+    // console.log
+
 
     
     // const firstTodoId = data ? data[0].id : undefined

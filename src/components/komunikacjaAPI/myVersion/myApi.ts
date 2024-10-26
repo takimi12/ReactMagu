@@ -8,7 +8,26 @@ export const useApi = () => {
     const [error, setError] = useState('');  
     const [loading, setLoading] = useState(false);
 
+    const call = async () => {
+        try {        
+            const response = await fetch('http://localhost:3000/todos'); 
+            if(response.ok) {
+                const data = await response.json();
+                setData(data);
+            } else {
+                setError(`Error: ${response.status} ${response.statusText}`);
+            } 
+        } catch(e) {
+            if (e instanceof Error) {
+                setError(`An error occurred: ${e.message}`);
+            } else {
+                setError('An unknown error occurred');
+            }
 
+        } finally {
+            setLoading(false);  
+        }      
+    }
     const getData = async () => {
         try {        
             const response = await fetch('http://localhost:3000/todos'); 
