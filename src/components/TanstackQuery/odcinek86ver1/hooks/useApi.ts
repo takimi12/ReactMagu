@@ -4,10 +4,14 @@ const API_URL = 'http://localhost:3000/clients'
 
 export const useApi = () => {
 
-    const call = async<R>(url:string, method:'GET' | 'DELETE' | 'POST'):Promise<R> => {
+    const call = async<R, P={}>(url:string, method:'GET' | 'DELETE' | 'POST', payload?:P):Promise<R> => {
 
         const fetchConfig = {
-            method
+            method,
+            Headers:{
+                'Content=Type': 'application/json'
+            },
+            body: payload ? JSON.stringify(payload) : undefined
         }
         try{
             const response = await fetch(`${API_URL}${url}`, fetchConfig)
@@ -28,8 +32,14 @@ export const useApi = () => {
         return await call<R>(url, 'GET')
     }
 
+
+    const apiPost = async<R,P>(url:string, payload:P) => {
+        return await call<R,P>(url,'POST', payload)
+    }
+
     return {
-        apiGet
+        apiGet, 
+        apiPost
     }
 
 }

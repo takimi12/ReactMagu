@@ -1,7 +1,7 @@
 {
   "clients": [
     {
-      "id": "1",
+      "id": "2",
       "firstName": "Jan",
       "lastName": "Kowalski",
       "street": "Kwiatowa 12",
@@ -12,15 +12,15 @@
       "phoneNumber": "+48123456789"
     },
     {
-      "id": "2",
-      "firstName": "Jan",
-      "lastName": "Kowalski",
-      "street": "Kwiatowa 12",
-      "postalCode": "12-345",
-      "city": "Warszawa",
-      "region": "Mazowieckie",
-      "photoUrl": "https://example.com/photo.jpg",
-      "phoneNumber": "+48123456789"
+      "id": "",
+      "firstName": "aaa",
+      "lastName": "aaa",
+      "street": "aaa",
+      "postalCode": "aaa",
+      "city": "aa",
+      "region": "aa",
+      "photoUrl": "http:gooogle.com",
+      "phoneNumber": "aaa"
     }
   ],
   "orders": [
@@ -37,6 +37,13 @@
       "quantity": "12",
       "title": "dasdaads",
       "description": "asdasdasdadadad"
+    },
+    {
+      "id": "0dc0",
+      "client": "+48123456789",
+      "quantity": "3",
+      "title": "3333333",
+      "description": "333333333333333333333"
     }
   ]
 }

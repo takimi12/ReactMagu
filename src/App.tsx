@@ -12,7 +12,11 @@ import { OrdersAdd } from "./components/week3.2.2/OrdersAdd";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { Clients33 } from "./components/week3.3/Clients";
+import { Clients33 } from "./components/week3.3.2/Clients";
+import { OrdersIdTanstack } from "./components/week3.3.7/OrdersId";
+import { OrdersAddTanstack } from "./components/week3.3.5/OrdersAddTanstack";
+import { OrdersAddTanstackGetMutation } from "./components/week3.3.6/OrdersAddTanstack";
+import { ClientsIdTanstack } from "./components/week3.3.3 + week3.3.4/ClientId";
 
 const queryClient = new QueryClient();
 
@@ -25,11 +29,11 @@ function App() {
           <Route path="/form" element={<Form />} />
           <Route path="/clients" element={<Clients33 />} />
           <Route path="/clients/add" element={<ClientsAdds />} />
-          <Route path="/clients/:id" element={<ClientsId />} />
+          <Route path="/clients/:id" element={<ClientsIdTanstack />} />
           <Route path="/clients/:id/edit" element={<ClientsIdEdit />} />
           <Route path="/orders" element={<Orders />} />
-          <Route path="/orders/:id" element={<OrdersId />} />
-          <Route path="/orders/add" element={<OrdersAdd />} />
+          <Route path="/orders/:id" element={<OrdersIdTanstack />} />
+          <Route path="/orders/add" element={<OrdersAddTanstackGetMutation />} />
           <Route path="/invoices" element={<Invoices />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
