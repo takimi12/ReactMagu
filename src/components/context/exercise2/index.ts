@@ -1,15 +1,16 @@
 export type TVSeries = {
-    id:number;
+    id: number;
     name:string;
     start_date:string;
     end_date:string | null;
-    coutry: string;
+    country: string;
     network: string;
 }
+
 
 export type TVSeriesResponse = {
     total:number;
     page:number;
     pages:number;
-    tv_shows: TVSeries[];
+    tv_shows:TVSeries[];
 }

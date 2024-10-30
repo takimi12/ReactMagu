@@ -1,6 +1,7 @@
 export type ConfigContextType = {
-     colors: {
+    colors: {
         primary: string;
         secondary: string;
-     }
-}
+    };
+};
+

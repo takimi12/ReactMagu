@@ -10,17 +10,6 @@
       "region": "Mazowieckie",
       "photoUrl": "https://example.com/photo.jpg",
       "phoneNumber": "+48123456789"
-    },
-    {
-      "id": "",
-      "firstName": "aaa",
-      "lastName": "aaa",
-      "street": "aaa",
-      "postalCode": "aaa",
-      "city": "aa",
-      "region": "aa",
-      "photoUrl": "http:gooogle.com",
-      "phoneNumber": "aaa"
     }
   ],
   "orders": [
@@ -44,6 +33,15 @@
       "quantity": "3",
       "title": "3333333",
       "description": "333333333333333333333"
+    }
+  ],
+  "users": [
+    {
+      "id": "6ab1",
+      "firstName": "aaa",
+      "lastName": "aaaa",
+      "email": "aa@a.pl",
+      "password": "123456"
     }
   ]
 }
