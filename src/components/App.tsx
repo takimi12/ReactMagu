@@ -8,7 +8,7 @@ import { BsFillPeopleFill, BsFillBagCheckFill, BsFillFileEarmarkRuledFill, BsFil
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Posts } from "./Posts";
 
-import { CheckingLogin } from "./Week4.1/CheckingLogin";
+import { UserProvider } from "./week4.1/Provider";
 
 
 const menuData = [
@@ -81,7 +81,7 @@ export const Components = () => {
         {/* <AsideMenu menuData={menuData}/>
         <Wrapper />
       <Comments data={data} /> */}
-<CheckingLogin />
+<UserProvider />
       {/* <Posts /> */}
         {/* <Footer footerData={footerData} /> */}
         

@@ -1,11 +1,11 @@
 // CheckingLogin.tsx
 import { useEffect, useState } from "react";
-import { User } from "../week4.1/type";
-import { UserContext } from "../week4.1/UserContext";
-import { UserDetailsInfo } from "./UserDetails";
+import { FakeLoginComponent } from "./FakeLoginComponent";
+import { User } from "./type";
+import { UserContext } from "./UserContext";
 
 
-    export const UserProviderInfoDetails = () => {
+    export const UserProvider = () => {
         
 
         const isLoggedInFromStorage = localStorage.getItem('isLoggedIn') === 'true';
@@ -54,7 +54,7 @@ import { UserDetailsInfo } from "./UserDetails";
       
         return (
           <UserContext.Provider value={{ isLoggedIn, logIn, logOut,users }}>
-            <UserDetailsInfo />
+            <FakeLoginComponent />
           </UserContext.Provider>
         );
       };

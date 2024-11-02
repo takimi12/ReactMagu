@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from './ThemeContex';
 
-const ThemeToggleButton: React.FC = () => {
+export const ThemeToggleButton: React.FC = () => {
   const themeContext = useContext(ThemeContext);
 
   if (!themeContext) {
@@ -17,4 +17,4 @@ const ThemeToggleButton: React.FC = () => {
   );
 };
 
-export default ThemeToggleButton;
+

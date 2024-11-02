@@ -1,8 +1,10 @@
-import React from 'react';
-import { useNotification } from './NotificationContext';
+import React, { useContext } from 'react';
+import { NotificationContext, useNotification } from './NotificationContext';
 
 export const AddClientComponent: React.FC = () => {
     const { showNotification } = useNotification();
+
+    
 // Przykładowa funkcja dodająca klienta, która zawsze kończy się sukcesem
 const addClient = async (clientData: any): Promise<void> => {
     // Tutaj można umieścić logikę dodawania klienta, np. zapytanie do API.

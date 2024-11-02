@@ -10,29 +10,37 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Clients33 } from "./components/week3.3.2/Clients";
 import { OrdersIdTanstack } from "./components/week3.3.7/OrdersId";
 import { OrdersAddTanstackGetMutation } from "./components/week3.3.6/OrdersAddTanstack";
-import { FakeRegisterComponentContext } from "./components/Week4.1/FakeRegisterComponent";
-import { CheckingUserDetails } from "./components/Week4.2/CheckingUserDetails";
-import {ProtectedWrapper} from "./components/Week4.3/ProtectedWraper";
-import { UserProvider } from "./components/Week4.1/UserContext";
-import { InvoicesContext } from "./components/Week4.3/Invoices";
-import { Suspense, lazy } from 'react';
+import { FakeRegisterComponentContext } from "./components/week4.1/FakeRegisterComponent";
+import { UserProviderInfoDetails } from "./components/week4.2/CheckingUserDetails";
+import {ProtectedWrapper} from "./components/week4.3/ProtectedWraper";
+import { InvoicesContext } from "./components/week4.3/Invoices";
+import { Suspense, lazy, useState } from 'react';
 import { ErrorBoundary } from "react-error-boundary";
-import { ContextWeek45 } from "./components/week4.5/App";
+import { ContextWeek45 } from "./components/week4.5/NotificationProvider";
 import { ClientsIdTanstackMUI } from "./components/week4.6/ClientId";
-import { AppSwitcher } from "./components/week4.7/App";
-
+import { AppSwitcher } from "./components/week4.7 z localStorage1/Provider";
+import { SwitcherMy } from "./components/week4.7my/Switcher";
+import { ThemeContext } from "./components/week4.7my/Context";
+import { SwitcherMyStorage } from "./components/week4.7my/Switcher+LocalStorage";
+import { CheckingProtected } from "./components/week4.3/CheckinProtected";
+import { AppRedux } from "./components/redux1/App";
 
 const queryClient = new QueryClient();
 
 function App() {
-  return (
 
-      <QueryClientProvider client={queryClient}>
+  return (
+    
+
+    <QueryClientProvider client={queryClient}>
         <BrowserRouter>
           <Suspense>
             <Routes>
-              <Route path="/" element={<Components />} />
-              <Route path="/form" element={<Form />} />
+              {/* <Route path="/" element={<Components />} /> */}
+
+              <Route path="/" element={<AppRedux />} />
+
+              {/* <Route path="/form" element={<Form />} />
               <Route path="/clients" element={<Clients33 />} />
               <Route path="/clients/add" element={<ClientsAdds />} />
               <Route path="/clients/:id" element={<ClientsIdTanstackMUI />} />
@@ -42,9 +50,12 @@ function App() {
               <Route path="/orders/:id" element={<OrdersIdTanstack />} />
               <Route path="/orders/add" element={<OrdersAddTanstackGetMutation />} />
               <Route path="/ContextWeek45" element={<ContextWeek45 />} />
-              <Route path="/switcher" element={<AppSwitcher />} />
+              <Route path="/switcher" element={<SwitcherMyStorage/>} />
+              <Route path="/infoLogin" element={<UserProviderInfoDetails/>} />
+              <Route path="/invoices" element={<CheckingProtected/>} /> */}
               
-              <Route
+              
+              {/* <Route
                 path="/invoices"
                 element={
                   <UserProvider>
@@ -54,8 +65,7 @@ function App() {
                   </UserProvider>
                 }
               />
-              
-              <Route path="/personalData" element={<CheckingUserDetails />} />
+               */}
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>
           </Suspense>
@@ -65,6 +75,7 @@ function App() {
           )}
         </BrowserRouter>
       </QueryClientProvider>
+
    );
 }
 

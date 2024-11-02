@@ -1,8 +1,10 @@
-import { useUserContext } from "../Week4.1/UserContext";
+import { useUserContext } from "../week4.1/UserContext";
 
-export const UserDetails = () => {
-    const { isLoggedIn, users } = useUserContext();
+export const UserDetailsInfo = () => {
+    const { isLoggedIn, users, logOut } = useUserContext();
 
+
+    console.log(isLoggedIn, 'ISLOGGEDIN')
 
 
     return (
@@ -10,11 +12,13 @@ export const UserDetails = () => {
             {isLoggedIn ? (
                 <div>
 {users.map(el => 
+
     <div>
     <p>Imię :{el.firstName}</p>
     <p>Nazwisko :{el.lastName}</p>
      </div>
     )}
+         <button onClick={logOut}>Wyloguj</button>
                 </div>
             ) : (
                 <div>TRESC DLA NIEZALOGOWANEGO USERA</div>  
