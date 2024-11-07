@@ -24,6 +24,15 @@ import { ThemeContext } from "./components/week4.7my/Context";
 import { SwitcherMyStorage } from "./components/week4.7my/Switcher+LocalStorage";
 import { CheckingProtected } from "./components/week4.3/CheckinProtected";
 import { AppRedux } from "./components/redux1/App";
+import { MoneyManagerApp } from "./components/week6.2/App";
+import { Provider } from "react-redux";
+import store, {persistor} from "./components/week6.3/store";
+import { OrdersPageWeek6 } from "./components/week6.3/Orders";
+import { PersistGate } from 'redux-persist/integration/react';
+import { Cart } from "./components/week6.3/Cart";
+import { CartDetails } from "./components/week6.3/CartDetails";
+
+
 
 const queryClient = new QueryClient();
 
@@ -33,26 +42,33 @@ function App() {
     
 
     <QueryClientProvider client={queryClient}>
+              <Provider store={store}>
+              <PersistGate loading={null} persistor={persistor}>
+
         <BrowserRouter>
           <Suspense>
             <Routes>
-              {/* <Route path="/" element={<Components />} /> */}
+              <Route path="/" element={<Components />} />
+              <Route path="/money" element={<MoneyManagerApp />} />
 
-              <Route path="/" element={<AppRedux />} />
-
-              {/* <Route path="/form" element={<Form />} />
+              <Route path="/form" element={<Form />} />
               <Route path="/clients" element={<Clients33 />} />
               <Route path="/clients/add" element={<ClientsAdds />} />
               <Route path="/clients/:id" element={<ClientsIdTanstackMUI />} />
               <Route path="/clients/:id/edit" element={<ClientsIdEdit />} />
-              <Route path="/orders" element={<Orders />} />
+
+              <Route path="/orders" element={<OrdersPageWeek6 />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/cart/:id" element={<CartDetails />} />
+
+
               <Route path="/register" element={<FakeRegisterComponentContext />} />
               <Route path="/orders/:id" element={<OrdersIdTanstack />} />
               <Route path="/orders/add" element={<OrdersAddTanstackGetMutation />} />
               <Route path="/ContextWeek45" element={<ContextWeek45 />} />
               <Route path="/switcher" element={<SwitcherMyStorage/>} />
               <Route path="/infoLogin" element={<UserProviderInfoDetails/>} />
-              <Route path="/invoices" element={<CheckingProtected/>} /> */}
+              <Route path="/invoices" element={<CheckingProtected/>} />
               
               
               {/* <Route
@@ -74,6 +90,8 @@ function App() {
             <ReactQueryDevtools initialIsOpen={false} />
           )}
         </BrowserRouter>
+        </PersistGate>
+        </Provider>
       </QueryClientProvider>
 
    );
