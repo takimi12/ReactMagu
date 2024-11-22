@@ -20,9 +20,6 @@ const orderSlice = createSlice({
   name: 'order',
   initialState,
   reducers: {
-    // addOrder: (state, action: PayloadAction<Order>) => {
-    //   state.selectedOrders.push(action.payload);
-    // },
     addOrder: (state, action: PayloadAction<Order>) => {
         const existingOrder = state.selectedOrders.find(order => order.id === action.payload.id);
         if (existingOrder) {

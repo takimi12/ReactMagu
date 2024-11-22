@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { ThemeContext } from "./Context"
-import { ChooseMode } from "./UsingComponent";
+import { ChooseMode } from "./ChoseMode";
 
 export const SwitcherMy = () => {
 
@@ -16,6 +16,7 @@ const toggleTheme = () => {
         <ThemeContext.Provider value={{theme,toggleTheme}}>
            <div style={{backgroundColor:`${theme}`}}> 
         <ChooseMode />
+        swithcer bez local storage
         </div>
         </ThemeContext.Provider>
         </>

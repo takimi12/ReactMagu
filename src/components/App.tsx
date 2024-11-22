@@ -9,7 +9,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Posts } from "./Posts";
 
 import { UserProvider } from "./week4.1/Provider";
-import { ReduxWeek } from "./week6.1/App";
+import { ReduxWeek61 } from "./week6.1/App";
 
 
 const menuData = [
@@ -79,7 +79,7 @@ const menuData = [
 export const Components = () => {
   return (
     <div className="App">
-      <ReduxWeek />
+      <ReduxWeek61 />
         <AsideMenu menuData={menuData}/>
         <Wrapper />
       <Comments data={data} />

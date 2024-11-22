@@ -4,8 +4,6 @@ export const UserDetailsInfo = () => {
     const { isLoggedIn, users, logOut } = useUserContext();
 
 
-    console.log(isLoggedIn, 'ISLOGGEDIN')
-
 
     return (
         <>

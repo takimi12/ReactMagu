@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { RootState } from './store';
 
-export const Cart = () => {
+export const CartWeek6 = () => {
   // Pobieramy zamówienia z Redux
   const orders = useSelector((state: RootState) => state.order.selectedOrders);
 
@@ -16,7 +16,7 @@ export const Cart = () => {
           orders.map((order) => (
             <li key={order.id}>
               {/* Link do szczegółów zamówienia */}
-              <Link to={`/cart/${order.id}`}>{order.title}</Link>
+              <Link to={`/week6/${order.id}`}>{order.title}</Link>
             </li>
           ))
         ) : (

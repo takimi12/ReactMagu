@@ -1,10 +1,10 @@
 // src/redux/store.ts
 import { configureStore } from '@reduxjs/toolkit';
-import moneyReducer from './moneySlice';
+import {moneyReducer} from './moneySlice';
 
 const store = configureStore({
   reducer: {
-    money: moneyReducer,
+    money: moneyReducer
   },
 });
 
@@ -13,3 +13,4 @@ export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 
 export default store;
+

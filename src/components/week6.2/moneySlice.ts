@@ -12,18 +12,12 @@ const initialState: MoneyState = {
 const moneySlice = createSlice({
   name: 'money',
   initialState,
-  reducers: {
- 
- 
+  reducers: { 
     deposit: (state, action: PayloadAction<number>) => {
       state.value += action.payload;
     },
     withdraw: (state, action: PayloadAction<number>) => {
-      if (state.value >= action.payload) {
-        state.value -= action.payload;
-      } else {
-        console.warn('Niewystarczające środki');
-      }
+         state.value -= action.payload;
     },
   },
 });

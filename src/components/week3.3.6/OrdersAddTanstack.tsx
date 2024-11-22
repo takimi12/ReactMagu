@@ -14,7 +14,7 @@ type ClientsObject = {
   phoneNumber: string;
 };
 
-export const OrdersAddTanstackGetMutation = () => {
+export const OrdersAddTanstackGetMutation336 = () => {
   const { data } = useGetClientQuery();
   const { mutate } = useAddOrderMutation(); 
 

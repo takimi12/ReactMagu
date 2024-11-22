@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 export const Avatar = () => {
     const money = useSelector((state: RootState) => state.money.value);
 
+
     return (
         <>
         <p> Avatar</p>

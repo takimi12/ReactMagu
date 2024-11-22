@@ -1,0 +1,11 @@
+memo - zapamietuje czy przekazywane propsy sie zmienily, jesli nie zmienily to dzieki tej metodzie komponent zostaje zapamietany 
+i nie bedzie renderowany w przypadku ponownego renderu rodzica
+-----------------------
+useMemo - zapamiętuje prymitywy i typy złzone/ to co funkcja zwraca, posiada tablice zaleznosci, zapamietuje referencje danego obiektu/tablicy lub wynik dzialania dzialania funkcji  i jesli nie tworzy sie cos nowego to nie robi ponownego renderu
+
+useMemo posiada tablice zaleznosci i pozwala kontrolowac kiedy chcemy ponownie wykonac funkcje
+
+w podobny - zly sposob mozna uzyc useefect i use state i przy zmianie tablicy zaleznosci to wykonac
+--------------
+useCallback - zapamiętuje definicje funkcji i zapobiega nadmiernym renderom
+--------------

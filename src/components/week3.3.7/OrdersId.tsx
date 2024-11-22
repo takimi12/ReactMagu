@@ -4,7 +4,7 @@ import { useGetOrderIdQuery } from './useGetOrdersId';
 
 
 
-export const OrdersIdTanstack = () => {
+export const OrdersIdTanstack337 = () => {
   const { ids } = useParams<{ ids: string }>(); 
 
   const idTanstack = ids !== undefined ? ids : '1';

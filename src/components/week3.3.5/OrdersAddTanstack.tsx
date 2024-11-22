@@ -13,7 +13,7 @@ type ClientsObject = {
   phoneNumber: string;
 };
 
-export const OrdersAddTanstack = () => {
+export const OrdersAddTanstack335 = () => {
 
 
   const { data } = useGetClientQuery();
@@ -121,7 +121,6 @@ export const OrdersAddTanstack = () => {
 
         if (response.ok) {
           console.log("Dane zostały pomyślnie wysłane");
-          // Możesz zresetować formularz lub wyświetlić powiadomienie o sukcesie
           setFormData({
             client: "",
             quantity: "",
@@ -139,7 +138,6 @@ export const OrdersAddTanstack = () => {
     }
   };
 
-  console.log(data)
 
   if(!data) return <p>dane nie zostały pobrane</p>
 

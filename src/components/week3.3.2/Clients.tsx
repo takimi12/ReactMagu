@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useGetClientQuery } from "./useGetClients";
 
-export const Clients33 = () => {
+export const Clients331 = () => {
     const { data } = useGetClientQuery();
 
     // Sprawdzanie, czy dane są dostępne

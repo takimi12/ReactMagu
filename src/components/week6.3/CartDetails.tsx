@@ -8,7 +8,7 @@ interface OrderDetailsParams {
   id: string ; // ID zamówienia pobrane z URL
 }
 
-export const CartDetails = () => {
+export const CartDetailsWeek6 = () => {
     const { id } = useParams<Record<string, string | undefined>>(); // Poprawiony typ dla useParams
     const orderId = id ? parseInt(id) : null; // Konwertujemy ID na liczbę, jeśli jest dostępne
 

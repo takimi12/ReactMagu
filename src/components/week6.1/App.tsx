@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import { Avatar } from './Avatar';
 
-export const ReduxWeek =() => {
+export const ReduxWeek61 =() => {
 return (
   <Provider store={store}>
 <Avatar />

@@ -1,6 +1,5 @@
 // CheckingLogin.tsx
 import { useEffect, useState } from "react";
-import { FakeLoginComponent } from "../week4.1/FakeLoginComponent";
 import { User } from "../week4.1/type";
 import { UserContext } from "../week4.1/UserContext";
 import {ProtectedWrapper} from "./ProtectedWraper"

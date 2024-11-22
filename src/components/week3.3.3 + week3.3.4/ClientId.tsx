@@ -17,7 +17,7 @@ type ClientsObject = {
   phoneNumber: string;
 };
 
-export const ClientsIdTanstack = () => {
+export const ClientsIdTanstack331 = () => {
   const { data: clients = [], error, isLoading } = useClients();
   const deleteMutation = useDeleteClient();
   const addMutation = useAddClient();

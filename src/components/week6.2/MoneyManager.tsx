@@ -4,36 +4,32 @@ import { useDispatch, useSelector } from 'react-redux';
 import { deposit, withdraw } from './moneySlice';
 import { RootState } from './store';
 
-
 const MoneyManager: React.FC = () => {
   const dispatch = useDispatch();
   const money = useSelector((state: RootState) => state.money.value);
   const [amount, setAmount] = useState<number>(0);
   const [error, setError] = useState<string>('');
 
-
   const handleDeposit = () => {
+    debugger;
     if (amount > 0) {
       dispatch(deposit(amount));
       setError('');
       setAmount(0);
-    } else {
-      setError('Kwota musi być większa od 0.');
-    }
+    } 
   };
 
   const handleWithdraw = () => {
-    if (amount > 0 && amount <= money) {
-      dispatch(withdraw(amount));
-      setError('');
-      setAmount(0);
-    } else if (amount > money) {
-      setError('Niewystarczające środki.');
-    } else {
-      setError('Kwota musi być większa od 0.');
+    if (amount > 0) {
+      if (amount <= money) {
+        dispatch(withdraw(amount));
+        setError('');
+        setAmount(0);
+      } else {
+        setError('Niewystarczające środki do wypłaty!');
+      }
     }
   };
-
 
   return (
     <div>

@@ -16,8 +16,9 @@ export const ChooseMode = () => {
 
 
     return (
-
+<>
 <button onClick={toggleTheme}> Zmień kolor</button>
 
+</>
     )
 }

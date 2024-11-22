@@ -13,7 +13,7 @@ type ClientsObject = {
   phoneNumber: string;
 };
 
-export const ClientsId = () => {
+export const ClientsId332 = () => {
   const [clients, setClients] = useState<ClientsObject[]>([]);
 
   useEffect(() => {
