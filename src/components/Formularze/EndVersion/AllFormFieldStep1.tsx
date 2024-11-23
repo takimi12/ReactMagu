@@ -1,6 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 
-export const AllFormField = () => {
+export const AllFormFieldStep1 = () => {
   const [login, setLogin] = useState('');
   const [age, setAge] = useState('');
   const [bio, setBio] = useState('');

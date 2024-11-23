@@ -37,11 +37,12 @@ import { NadmierneRenderowanieEx1 } from "./components/nadmierneRenderowanie/cwi
 import { RandomArraySorter } from "./components/nadmierneRenderowanie/homework/ex1/ex1";
 import { TextInputParent } from "./components/nadmierneRenderowanie/homework/ex2/InputParent";
 import { Appusecallback } from "./components/nadmierneRenderowanie/useCallback/App";
-import { AllFormField } from "./components/Formularze/AllFormField";
 import { ReactHookForm } from "./components/forms/hookForm/ReactHookForm";
 import { ReactHookFormLearning } from "./components/Formularze/ReactHookForm/app";
 import { AppYUP } from "./components/Formularze/Yup/odcinek120/app";
 import { ReactHookFormHomework } from "./components/Formularze/ReactHookForm/homework";
+import { AllFormFieldStep2 } from "./components/Formularze/EndVersion/AllFormFieldStep2";
+import { AllFormFieldStep4 } from "./components/Formularze/EndVersion/AllFormFieldStep4";
 
 
 
@@ -67,7 +68,7 @@ function App() {
               
               <Route path="/clients/add" element={<ClientsAdds />} />
               <Route path="/nadmierne" element={<Appusecallback />} />
-              <Route path="/formularze" element={<AllFormField />} />
+              <Route path="/formularze" element={<AllFormFieldStep4 />} />
               <Route path="/nadmierneUsememo" element={<NadmierneUsememo />} />
 
 

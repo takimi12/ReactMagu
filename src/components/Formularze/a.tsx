@@ -1,5 +1,5 @@
 import { ChangeEvent,FormEvent } from "react";
-import { useForm } from "./SimpleUseFormStep22";
+import { useForm } from "./FormHooks/SimpleUseFormStep2";
 
 type FormValue = {
     login:string;
