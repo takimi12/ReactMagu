@@ -40,7 +40,8 @@ import { Appusecallback } from "./components/nadmierneRenderowanie/useCallback/A
 import { AllFormField } from "./components/Formularze/AllFormField";
 import { ReactHookForm } from "./components/forms/hookForm/ReactHookForm";
 import { ReactHookFormLearning } from "./components/Formularze/ReactHookForm/app";
-import { AppYUP } from "./components/Formularze/Yup/app";
+import { AppYUP } from "./components/Formularze/Yup/odcinek120/app";
+import { ReactHookFormHomework } from "./components/Formularze/ReactHookForm/homework";
 
 
 
@@ -76,7 +77,7 @@ function App() {
               <Route path="/register" element={<FakeRegisterComponentContext />} />
 
               <Route path="/orders" element={<OrdersPageWeek6 />} />
-              <Route path="/hook" element={<ReactHookFormLearning/>} />
+              <Route path="/hook" element={<ReactHookFormHomework/>} />
               <Route path="/yup" element={<AppYUP/>} />
 
               <Route path="/week6" element={<CartWeek6 />} />

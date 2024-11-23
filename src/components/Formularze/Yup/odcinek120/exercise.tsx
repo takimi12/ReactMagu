@@ -1,6 +1,6 @@
 import { yupResolver } from "@hookform/resolvers/yup"
 import { useForm } from "react-hook-form"
-import { OrderData, orderSchema } from "./schema/order"
+import { OrderData, orderSchema } from "../schema/order120"
 
 export const App = () => {
 

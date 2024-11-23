@@ -34,7 +34,6 @@ export const ReactHookFormLearning = () => {
 
     const agreementValue = watch('agreement');
 
-    console.log(errors);
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
             <input type="text" {...register('login', { required: true, minLength: 3 })} />
